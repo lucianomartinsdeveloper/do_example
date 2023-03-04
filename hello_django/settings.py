@@ -1,12 +1,11 @@
 from pathlib import Path
+from decouple import config
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = '52@y%9$#3#)9cff)jdcl&0-@4(u!y)dw@l2!e2s8!(jrrta_u+'
-
-DEBUG = True
-
-ALLOWED_HOSTS = ['*']
+SECRET_KEY = config('SECRET_KEY')
+DEBUG = config('DEBUG')
+ALLOWED_HOSTS = config('ALLOWED_HOSTS')
 
 INSTALLED_APPS = [
     'django.contrib.admin',
