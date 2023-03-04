@@ -1,1 +1,1 @@
-# Projeto para testar a App Plataform da Digital Ocean
+# Projeto para teste na Digital Ocean
